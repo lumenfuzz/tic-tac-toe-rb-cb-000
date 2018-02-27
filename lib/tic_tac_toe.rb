@@ -34,17 +34,6 @@ def valid_move?(board, index)
   index.between?(0,8) && !position_taken?(board, index)
 end
 
-def turn(board)
-  index = 9
-  until valid_move?(board, index)
-    puts "Please enter 1-9:"
-    input = gets.strip
-    index = input_to_index(input)
-  end
-    move(board, index)
-    display_board(board)
-end
-
 def turn_count(board)
   counter = 0
   board.each do |index|
