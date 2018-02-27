@@ -96,6 +96,6 @@ def play(board)
     puts "Where would you like to go?"
     input = gets.strip
     index = input_to_index(input)
-    move(board, index, "X")
+    move(board, index, current_player(board))
   end
 end
