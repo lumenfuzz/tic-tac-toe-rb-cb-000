@@ -91,7 +91,7 @@ def winner(board)
 end
 
 def play(board)
-  until over(board)
+  until over?(board)
     display_board(board)
     puts "Where would you like to go?"
     input = gets.strip
